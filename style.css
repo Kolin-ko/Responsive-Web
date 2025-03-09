@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    min-height: 50vh;
+    background: linear-gradient(#051f30,#1644a8);
+}
+.Header-size{
+    font-size: 30px;
+    padding: 2%;
+    text-align: center;
+    background: linear-gradient(#051f30,#0c2763);
+}
+
+.text-white{
+    color: azure;
+    font-family: serif;
+}
+
+/*.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container h1 {
+    font-size: 8vw;
+    width: 100%;
+    min-height: 200px;
+}*/
+
+.nav-container{
+    background: linear-gradient(#051f30,#214eaf);
+    display: flex;
+    flex: auto;
+    padding: 0.5%;
+    gap: 2%;
+    align-items: center;
+    font-size: 15px; 
+}
+
+nav a{
+    color: azure;
+    padding: 1%;
+}
+
+nav a:hover{
+    background-color: #3f658d;
+    border-radius: 10%;
+    transition:0.3s all;
+}
+
+.jumbotron{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.test img{
+    width: 300px;
+    height: auto;
+    align-items: center;
+    border-radius: 8%;
+}
+
+/* tablet */
+@media screen and (min-width : 600px) {
+    body {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        width: 100%;
+        padding: 2%;
+        gap: 2%;
+    }
+}
+
+.tex-content{
+    display: flex;
+    flex: auto;
+    width: 100%;
+    padding: 2%;
+    gap: 2%;
+}
+
+.text p {
+    text-align: justify;
+}
+
+.profile{
+    width: 50%;
+    border-radius: 5%;
+}
+
+/* desktop */
+@media screen and (min-width : 992px) {
+
+}
