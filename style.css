@@ -5,11 +5,49 @@ body {
     min-height: 50vh;
     background: linear-gradient(#051f30,#1644a8);
 }
+
+img{
+    width: 100%;
+}
 .Header-size{
-    font-size: 30px;
-    padding: 2%;
+    display: flex;
     text-align: center;
     background: linear-gradient(#051f30,#0c2763);
+}
+
+.header-logo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.header-home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+   font-size: 30px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+.text-content{
+    display: flex;
+    flex: auto;
+    width: 100%;
+    padding: 2%;
+    gap: 2%;
 }
 
 .text-white{
@@ -17,16 +55,15 @@ body {
     font-family: serif;
 }
 
-/*.row::after {
+.a {
+    text-decoration: none;
+}
+
+.row::after {
     content: "";
     clear: both;
     display: table;
 }
-.container h1 {
-    font-size: 8vw;
-    width: 100%;
-    min-height: 200px;
-}*/
 
 .nav-container{
     background: linear-gradient(#051f30,#214eaf);
@@ -68,33 +105,40 @@ nav a:hover{
 /* tablet */
 @media screen and (min-width : 600px) {
     body {
-        display: flex;
+        display: grid;
         flex: auto;
         flex-direction: column;
-        width: 100%;
         padding: 2%;
         gap: 2%;
     }
-}
-
-.tex-content{
-    display: flex;
-    flex: auto;
-    width: 100%;
-    padding: 2%;
-    gap: 2%;
+    .visual{
+        padding:5px;
+        width: 50%;
+        float: left;
+        border-radius: 10%;
+    }
 }
 
 .text p {
     text-align: justify;
 }
 
-.profile{
-    width: 50%;
-    border-radius: 5%;
-}
-
 /* desktop */
 @media screen and (min-width : 992px) {
+    body {
+        display: grid;
+        flex: auto;
+        flex-direction: column;
+        padding: 2%;
+        gap: 2%;
+        
+    }
+    .visual {
+        padding: 5px;
+        display: grid;
+        width: 25%;
+        float: left;
+        border-radius: 10%;
 
+    }
 }
