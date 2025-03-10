@@ -55,15 +55,6 @@ h2 {
     font-family: serif;
 }
 
-.a {
-    text-decoration: none;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 .nav-container{
     background: linear-gradient(#051f30,#214eaf);
@@ -73,6 +64,10 @@ h2 {
     gap: 2%;
     align-items: center;
     font-size: 15px; 
+}
+
+.a {
+    text-decoration: none;
 }
 
 nav a{
@@ -94,12 +89,8 @@ nav a:hover{
     text-align: center;
 }
 
-
-.test img{
-    width: 300px;
-    height: auto;
-    align-items: center;
-    border-radius: 8%;
+.visual img {
+    border-radius: 10%;
 }
 
 /* tablet */
@@ -108,20 +99,18 @@ nav a:hover{
         display: grid;
         flex: auto;
         flex-direction: column;
-        padding: 2%;
-        gap: 2%;
+        gap: 8px;
+        border-radius: 10px;
     }
     .visual{
-        padding:5px;
+        padding: 10px;
+        display: flex;
         width: 50%;
         float: left;
-        border-radius: 10%;
+        text-align: left;
     }
 }
 
-.text p {
-    text-align: justify;
-}
 
 /* desktop */
 @media screen and (min-width : 992px) {
@@ -129,16 +118,67 @@ nav a:hover{
         display: grid;
         flex: auto;
         flex-direction: column;
-        padding: 2%;
-        gap: 2%;
+        padding: 1rem;
+        gap: 8px;
         
     }
     .visual {
-        padding: 5px;
+        padding: 10px;
         display: grid;
         width: 25%;
         float: left;
-        border-radius: 10%;
+        text-align: left;
+      
 
     }
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-flow: column;
+}
+
+.form-group{
+    position: relative;
+    margin: 12px 0;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: rgba(29, 99, 230, 0.5);
+    background: linear-gradient(#051f30,#346eeb);
+    transition: 0.15s all ease;
+    color: azure;
+    width: 100%;
+}
+
+.textarea {
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: rgba(29, 99, 230, 0.5);
+    background: linear-gradient(#051f30,#346eeb);
+    transition: 0.15s all ease;
+    color: azure;
+    width: 100%;
+}
+
+.form-group input::placeholder{
+    color: transparent;
+}
+
+.btn-kirim{
+    margin-top: 10px;
+    background: linear-gradient(#051f30,#346eeb);;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 10px;
+
 }
